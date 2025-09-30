@@ -45,3 +45,6 @@ class Square:
     def draw(self):
         print("\033["+str(self.y)+";"+str(self.x)+"H"+f"{self.character*2}")
         print("\033["+str(self.y+1)+";"+str(self.x)+"H"+f"{self.character*2}")
+    def changeXCoord(self,changeX):
+        self.x = changeX
+        
